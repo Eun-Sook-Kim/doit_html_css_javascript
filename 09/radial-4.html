@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>원형 그러데이션</title>
+  <style>
+		div {
+			width:500px;
+      height:300px;
+			margin:10px;
+		}
+		.grad1{
+			background:skyblue;  /* css3를 지원하지 않는 브라우저용 */
+			background:radial-gradient(yellow, white, orange);  /* 노란색에서 흰색을 거쳐 주황색으로 바뀌는 타원형 그러데이션 */
+		}
+		.grad2{
+			background:skyblue;  /* css3를 지원하지 않는 브라우저용 */
+			background:radial-gradient(yellow, white 10%, orange 60%);   /* 노란색에서 10% 위치의 흰색, 60% 위치의 주황색으로 바뀌는 타원형 그러데이션 */
+		}
+	</style>
+</head>
+<body>
+  <div class="grad1"></div>
+  <div class="grad2"></div>
+ </body>
+</html>

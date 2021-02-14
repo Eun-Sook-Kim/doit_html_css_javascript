@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ccc;
+	padding: 20px;	
+}
+
+form {
+	background:#fff;
+	border:1px solid #222;
+	border-radius: 5px;
+	padding: 20px;
+	width: 400px;	
+	margin:30px auto;
+}
+		
+fieldset {
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+		
+legend {
+	font-size: 16px;
+	font-weight: bold;
+	padding-left:5px;
+	padding-bottom: 10px;	
+}
+			
+form ul li {
+	line-height: 30px;
+	list-style: none;
+	padding: 5px 10px;
+	margin-bottom: 2px;
+}
+			
+form label {
+	float: left;
+	font-size: 13px;
+	width: 110px;
+}
+
+form button {	
+	border: 1px solid #222;
+	border-radius: 20px;
+	display: block;
+	font: 16px;
+	letter-spacing: 1px;
+	margin: auto;
+	padding: 7px 25px;
+}

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Transform:rotate</title>
+  <style>
+		#container{
+			width:800px;
+			margin:20px auto;
+		}
+		.origin {
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin: 40px;
+		}
+
+    #rotate1:hover {
+      transform: rotate(40deg);  /* 시계 방향(오른쪽)으로 40도 회전 */
+    }
+    #rotate2:hover {
+      transform: rotate(-40deg);  /* 시계 반대 방향(왼쪽)으로 40도 회전 */
+    }
+  </style>
+</head>
+<body>		
+	<div id="container"> 
+		<div class="origin" id="rotate1">
+			<img src="images/tree.jpg">	
+		</div>
+		<div class="origin" id="rotate2">
+			<img src="images/tree.jpg">							
+	</div>
+</body>
+</html>

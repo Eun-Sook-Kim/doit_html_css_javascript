@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>가상 클래스</title>
+	<style>
+		#container {
+			text-align:center;
+			color:#2b2b2b;
+		}
+		table, tb, th {
+			border:1px solid #ccc;
+		}
+		table {
+			width:200px;
+			margin:0 auto;
+			border-collapse:collapse;
+		}
+		td {			
+			text-align:left;
+			padding:10px;
+			padding-left:20px;
+		}
+		table tr:nth-of-type(2n+1) {  /* 홀수 번째 열에만 스타일 적용 */
+			background:lightgray;
+			color:black;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>웹 개발</h1>
+		<table>
+			<tr>
+				<td>HTML</td>
+			</tr>
+			<tr>
+				<td>CSS</td>
+			</tr>
+			<tr>
+				<td>Javascirpt</td>
+			</tr>
+			<tr>
+				<td>React</td>
+			</tr>
+			<tr>
+				<td>node.js</td>
+			</tr>			
+		</table>
+	</div>
+</body>
+</html>

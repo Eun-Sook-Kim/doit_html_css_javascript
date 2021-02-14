@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>라이트박스</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+  </head>
+  <body>
+    <div class="row">
+      <ul>
+        <li><img src="images/tree-1-thumb.jpg" data-src="images/tree-1.jpg" class="pic"></li>
+        <li><img src="images/tree-2-thumb.jpg" data-src="images/tree-2.jpg" class="pic"></li>
+        <li><img src="images/tree-3-thumb.jpg" data-src="images/tree-3.jpg" class="pic"></li> 
+        <li><img src="images/tree-4-thumb.jpg" data-src="images/tree-4.jpg" class="pic"></li>
+        <li><img src="images/tree-5-thumb.jpg" data-src="images/tree-5.jpg" class="pic"></li>
+        <li><img src="images/tree-6-thumb.jpg" data-src="images/tree-6.jpg" class="pic"></li>          
+      </ul>    
+    </div>
+
+    <div id="lightbox">
+			<img src="images/tree-1.jpg" alt="" id="lightboxImage">			
+    </div>
+
+    <script>
+      var pics = document.getElementsByClassName("pic"); // .pic인 요소들을 가져와 pics 라는 변수에 저장. querySelectorAll(".pic")도 가능
+      var lightbox = document.getElementById("lightbox");  // 라이트 박스. querySelector("#lightbox")도 가능
+      var lightboxImage = document.getElementById("lightboxImage");  // 라이트 박스 안의 이미지. querySelector("#lightboxImage")도 가능
+
+      for (i=0; i<pics.length; i++) {
+        pics[i].addEventListener("click", showLightbox);
+      }
+
+      function showLightbox() {
+				var bigLocation = this.getAttribute("data-src"); // bigLocation = this.data-src; 도 가능.
+				lightboxImage.setAttribute("src", bigLocation);  // lightboxImage.src = bigLocation; 도 가능.
+				lightbox.style.display = "block";  // 라이트박스 이미지를 화면에 표시
+      }
+      
+      lightbox.onclick = function() {  //click 이벤트가 발생했을 때 실행할 함수 선언
+				lightbox.style.display = "none";  // lightbox 요소를 화면에서 감춤
+      }
+    </script>
+  </body>
+</html>

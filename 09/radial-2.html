@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>원형 그러데이션</title>
+  <style>
+    li {
+			display:inline-block;
+			width:300px;
+			height:300px;
+			border:1px solid black;
+			margin:10px;
+    }	
+    #div1{
+			background:darkgreen;
+			background:radial-gradient(circle closest-side at 30% 40%, white, yellow, green);  /* 그러데이션 중심에서 가장 가까운 측면에 닿을 때까지 */
+    }
+    #div2{
+			background:darkgreen;
+			background:radial-gradient(circle closest-corner at 30% 40%, white, yellow, green);  /* 그러데이션 중심에서 가장 가까운 꼭짓점에 닿을 때까지 */
+    }
+    #div3{
+			background:darkgreen;
+			background:radial-gradient(circle farthest-side at 30% 40%, white, yellow, green);  /* 그러데이션 중심에서 가장 멀리 떨어진 측면에 닿을 때까지 */
+    }
+    #div4{
+			background:darkgreen;
+			background:radial-gradient(circle farthest-corner at 30% 40%, white, yellow, green);  /* 그러데이션 중심에서 가장 멀리 떨어진 꼭짓점에 닿을 때까지 */
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li id="div1"></li>
+    <li id="div2"></li>
+    <li id="div3"></li>
+    <li id="div4"></li>
+  </ul>
+ </body>
+</html>

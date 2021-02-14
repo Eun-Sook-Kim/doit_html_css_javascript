@@ -1,0 +1,41 @@
+		#container { /* id="container"인 요소에 적용할 스타일 */
+			width:800px;
+			height:500px;
+			margin:0 auto;
+			padding:20px 10px 0 50px;;
+			border:1px solid #ccc;
+		}
+		#prod-img, #desc { /* id="prod-img"인 요소와 id="desc"인 요소에 공통으로 적용할 스타일 */
+			float:left;
+		}
+		#prod-img { /* id="desc"인 요소에 적용할 스타일 */
+			margin:20px 50px auto 10px;
+		}
+		#prod-img img { /* id="desc"인 요소의 하위 요소 중 img 요소에 적용할 스타일 */
+			border:1px solid #ccc;
+			outline:1px dashed rgb(253, 186, 0);			
+			outline-offset: -7px;
+		}
+		#desc {  /* id="desc"인 요소에 적용할 스타일 */
+			width:300px;
+		}
+		h1 {  /* h1 요소에 적용할 스타일 */
+			font-size:1.8em;
+		}
+		h2 {  /* h2 요소에 적용할 스타일 */
+			font-size:1.3em;
+			color:#222;
+		}
+		p {  /* p 요소에 적용할 스타일 */
+			font-size:0.9em;
+			line-height:1.4;
+			text-align: justify;
+		}
+		.accent {
+			font-weight:700;
+			font-size:1.0em;
+			font-style:italic;
+		}
+		.bright {  /* class="bright"인 요소에 적용할 스타일 */
+			color:blue;
+		}

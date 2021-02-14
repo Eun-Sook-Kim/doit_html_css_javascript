@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>Transform</title>
+    <style>
+			#container{
+				width:600px;
+				margin:20px auto;
+			}
+			.origin {
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+				float: left;
+				margin: 40px;
+			}
+			.origin > div {				
+				width:100px;
+				height:100px;
+				background-color:orange;
+			}
+      #skewx:hover {
+        transform: skewX(30deg);  /* x축 기준으로 30도 비틀기 */
+      }
+      #skewy:hover {
+        transform: skewY(15deg);  /* y축 기준으로 15도 비틀기 */
+      }
+      #skewxy:hover {
+        transform: skew(-25deg, -15deg);  /* x축 기준으로 -25도, y축 기준으로 -15도 비틀기 */
+      }
+		</style>
+	</head>
+	<body>		
+		<div id="container">		
+			<div class="origin">
+				<div id="skewx"></div>
+			</div>
+			<div class="origin">
+				<div id="skewy"></div>
+			</div>
+			<div class="origin">
+				<div id="skewxy"></div>
+			</div>
+		</div>
+
+		
+	</body>
+</html>

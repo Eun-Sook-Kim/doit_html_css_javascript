@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Grid Layout</title>
+    <style>
+     #wrapper1{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));  /* 화면을 꽉 채울만큼 칼럼 너비를 늘려서 표시 */
+      margin-bottom:20px;
+    }
+    #wrapper2{
+      display:grid;
+      grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));  /* 칼럼 최소 너비만큼 채워서 표시 */
+    }    
+    h1 {
+      font-size:24px;
+    }
+    .items{
+      padding:15px;
+      background-color:#eee;
+    }   
+    .items:nth-child(odd){
+      background-color:#bbb;
+    }
+    </style>
+
+  </head>
+  <body>
+    <h1>auto-fit일 때</h1>
+    <div id="wrapper1">            
+      <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt magni voluptatem.</div>
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nulla corrupti porro!</div>
+      <div class="items">Lorem ipsum dolor sit.</div>
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quos!</div>
+      <div class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro odit quam sit.</div>
+    </div>
+
+    <h1>auto-fill일 때</h1>
+    <div id="wrapper2">            
+      <div class="items">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nesciunt magni voluptatem.</div>
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="items">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius nulla corrupti porro!</div>
+      <div class="items">Lorem ipsum dolor sit.</div>
+      <div class="items">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quos!</div>
+      <div class="items">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro odit quam sit.</div>
+    </div>
+  </body>
+  </html>

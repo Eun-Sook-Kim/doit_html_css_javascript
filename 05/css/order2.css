@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+#container {
+  width:480px;
+  margin:20px auto;
+}
+h1 {
+  font-size:2em;
+  margin:10px;
+}
+fieldset {
+  padding:15px;
+}
+fieldset legend {  
+  font-weight:bold;  
+}
+ul {
+  list-style:none;
+  padding-left:0;
+}
+li {
+  margin:10px;
+}
+#product input[type="number"] {
+  width:30px;
+  margin-left:10px;
+}
+#shipping li label {
+ width:80px;
+ float:left;
+ text-align:left;     
+}
+input[type="text"], input[type="tel"], input[type="email"] {
+  width:300px;
+}
+
+/* '주문하기', '취소하기' 버튼 */
+form > div {
+  margin-top:20px;
+  display:flex;
+  justify-content: space-around;
+}
+form > div > button {
+  text-align:center;
+  width:150px;
+  height:40px;      
+  background-color:#fafafa;
+  border:1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+}
+
+form > div > button:first-of-type {
+  background-color:#435fff;
+  color:#fff;
+}

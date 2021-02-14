@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>플렉스 박스 레이아웃</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1 1">
+  <style>
+    .container {
+      width:80%;
+      height:150px;
+      display:flex;
+      align-items:center;
+      background-color:#eee;
+      border:1px solid #222;
+      margin-bottom:20px;
+    }      
+    #box1{
+      flex:1;    
+    }
+    #box2{
+      flex:30px;         
+    }
+    #box3{
+      flex:2 2;         
+    } 
+    #box4{
+      flex:1 40px;  
+    }      
+    #box5{
+      flex:2 2 0;        
+    }                           
+    .box {
+      width:60px;
+      height:60px;
+      margin:5px;   
+      background-color:#222;   
+    }
+    p {
+      color:#fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="box1"><p>1</p></div>
+    <div class="box" id="box2"><p>2</p></div>
+    <div class="box" id="box3"><p>3</p></div>
+    <div class="box" id="box4"><p>4</p></div>
+    <div class="box" id="box5"><p>5</p></div>
+  </div>          
+</body>
+</html>

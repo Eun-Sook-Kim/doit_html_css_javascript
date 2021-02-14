@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>Transform:scale</title>
+    <style>
+			#container{
+				width:600px;
+				margin:20px auto;
+			}
+			.origin {
+				width: 100px;
+				height: 100px;
+				border: 1px solid black;
+				float: left;
+				margin: 40px;
+			}
+			.origin > div {				
+				width:100px;
+				height:100px;
+				background-color:orange;
+			}
+      #scalex:hover{
+        transform: scaleX(2);  /* x축으로(가로) 2배 확대 */ 
+      }
+      #scaley:hover{
+        transform: scaleY(1.5);  /* y축으로(세로) 1.5배 확대 */ 
+      } 
+      #scale:hover{
+        transform: scale(0.7);  /* x, y축으로(가로, 세로) 0.7배 확대 */ 
+      }
+		</style>
+	</head>
+	<body>
+		<div id="container">		
+			<div class="origin">
+				<div id="scalex"></div>
+			</div>
+			<div class="origin">
+				<div id="scaley"></div>
+			</div>
+			<div class="origin">
+				<div id="scale"></div>
+			</div>
+		</div>		
+	</body>
+</html>

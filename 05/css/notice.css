@@ -1,0 +1,18 @@
+* {  /* 전체 선택자 */
+  box-sizing: border-box;
+}
+body{  /* 문서 본문에 대한 스타일 */
+  display:flex;  /* 플렉스 컨테이너 */ 
+  justify-content: center;  /* 주축(수평) 정렬 */
+  align-items: center;    /* 교차축(수직) 정렬 */
+  margin:0;    /* 마진 */  
+  min-height: 100vh;  /* 최소 높이 */
+}
+#container{   /* 컨테이너 스타일 */
+  width:250px;   /* 너비 */
+  height:375px;   /* 높이 */
+  padding:100px 50px;  /* 패딩 */
+  border:1px solid black;   /* 테두리 */
+  background:url('../images/notice.jpg') no-repeat left top;  /* 배경 이미지 */
+  background-size:auto;  /* 배경 이미지 크기 */
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스모델</title>
+	<style>
+		div {
+			width:200px;
+			height:100px;
+			display:inline-block;
+			margin:15px;			
+			border-style:dashed;  /* 테두리 스타일 - 선으로 된 점선 */
+			border-width:2px; /* 테두리 굵기 - 2px */
+		}
+		#box1 { border-color:red;	}  /* 전체 테두리 - 빨강 */
+		#box2 { 
+      border-top-color:blue; /* 위쪽 테두리 - 파랑 */
+      border-left-color:red;  /* 왼쪽 테두리 - 빨강 */
+    } 
+	</style>
+</head>
+<body>
+	<div id="box1"> </div>
+	<div id="box2"> </div>	
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 1</title>
+	<style>
+		ul{
+			list-style: none;
+		}
+		li {
+			font-size:20px; 
+			line-height: 35px;
+		}
+		.check {			
+			color:#999;
+			font-size:20px;
+			margin-right:25px;
+		}
+	</style>
+</head>
+<body>
+	<h1>할 일 목록</h1>
+	<ul>
+		<li><span class="check">&check;</span>할 일 1 </li>
+		<li><span class="check">&check;</span>할 일 2 </li>
+		<li><span class="check">&check;</span>할 일 3 </li>
+		<li><span class="check">&check;</span>할 일 4 </li>
+		<li><span class="check">&check;</span>할 일 5 </li>
+	</ul>
+
+	<script>
+		var checks = document.querySelectorAll(".check");
+		for(var i = 0; i < checks.length; i++) {
+			checks[i].addEventListener("click", function() {
+        this.style.color = "#ccc";
+				this.parentNode.style.color = "#ccc";
+				this.parentNode.style.textDecoration="line-through";
+			});
+		}
+	</script>
+</body>
+</html>

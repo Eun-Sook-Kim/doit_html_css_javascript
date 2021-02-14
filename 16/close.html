@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window 객체</title>
+  <style>
+    #container{
+      width:300px;
+      margin:20px auto;
+    }
+    button {
+      border:1px solid #222;
+      padding:15px;
+      font-size:0.8em;
+      margin-right:20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <button onclick="openWin()">팝업 창 열기</button>
+    <button onclick="closeWin()">팝업 창 닫기</button>
+  </div>
+
+  <script>
+    function openWin() {
+      let opt = 'width=400, height=350, left=300, top=200'
+      myWin = window.open("doit.html","doit", opt);
+    }
+    function closeWin(){
+      myWin.close();
+    }
+  </script>
+</body>
+</html> 

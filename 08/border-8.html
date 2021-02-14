@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스모델</title>
+	<style>
+		div {
+      width:200px;
+      height:100px;
+      display:inline-block;
+      margin:15px;
+      background:#ffd800;
+      border:2px solid #222;
+    }
+    .round1{
+      border-radius : 50px/30px;  /* 네 군데 꼭짓점을 똑같은 크기로 라운딩 */
+    }
+    .round2{
+      border-bottom-right-radius : 50% 30%;  /* 오른쪽 아래 꼭짓점을 가로 50%, 세로 30% 크기로 라운딩 */
+    }
+    .round3{
+      border-top-left-radius: 50px 30px;  /* 왼쪽 위 꼭짓점을 가로 50px, 세로 30px 크기로 라운딩 */
+    }
+    .round4{
+      border-bottom-left-radius: 30px;  /* 값이  하나 뿐이면 가로 세로 똑같이 30px 크기로 라운딩  */
+    }
+	</style>
+</head>
+<body>
+  <div class="round1"></div>
+  <div class="round2"></div>
+  <div class="round3"></div>
+  <div class="round4"></div>
+</body>
+</html>
