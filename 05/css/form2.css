@@ -1,0 +1,38 @@
+fieldset {  /* 모든 fieldset 요소에 적용할 스타일 */
+  margin-bottom:20px;  /* 아래쪽 마진 */ 
+}
+fieldset legend {  /* fieldset 요소의 하위 legend 요소에 적용할 스타일 */
+  font-weight:bold;  /* 폰트 굵기 */
+}
+ul { /* 모든 ul 요소에 적용할 스타일 */
+  list-style:none;  /* 불릿 없애기 */
+  padding-left:0;  /* 왼쪽 패딩 */ 
+}
+li {  /* 모든 li 요소에 적용할 스타일 */
+  margin:10px;  /* 마진 */
+}
+#shipping li label {  /* #shipping 요소의 하위 li label 요소에 적용할 스타일 */
+ width:80px;  /* 라벨 너비 */
+ float:left;  /* 좌우로 배치 */
+ text-align:left; /* 텍스트 왼쪽 정렬 */    
+}
+input[type="text"], input[type="tel"], input[type="email"] {   /* type="text", type="tel", type="email"인 input 요소에 적용할 스타일 */
+  width:300px;   /* 너비 */
+}
+
+/* '주문하기', '취소하기' 버튼 */
+div {  /* 모든 div 요소에 적용할 스타일 */
+  width:400px;  /* 너비 */
+  margin:15px auto;  /* 화면 중앙에 배치 */
+}
+input[type="submit"], input[type="reset"] {  /* type="submit", type="reset"인 input 요소에 적용할 스타일 */
+  text-align:center;  /* 텍스트 중앙 정렬 */
+  width:150px;  /* 너비 */
+  height:40px;  /* 높이 */    
+  background-color:#fafafa;  /* 배경색 */
+  border:1px solid #ccc; /* 테두리 */
+  box-shadow: 1px 1px 1px #ccc;  /* 그림자 */
+}
+input[type="submit"] {  /* type="submit"인 input 요소에 적용할 스타일 */
+  margin-right:20px;  /* 오른쪽 마진 */
+}    

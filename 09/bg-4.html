@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>배경 이미지</title>
+  <style>
+    #container{
+      width:1100px;
+      margin:50px auto;
+    }
+    .box{
+      float:left;
+      border:1px solid #222;
+      width:300px;
+      height:300px;      
+      margin:20px;
+      background:url('images/bg4.jpg') no-repeat left top;
+    }
+    #bg1 { background-size:auto;}  /* 원래 배경 이미지 크기로 표시 */
+    #bg2 { background-size:200px;}  /* 너비는 200px, 높이는 자동 계산 */
+    #bg3 { background-size:50%;}  /* 배경 이미지 너비는 요소 너비의 50%, 높이는 자동 계산 */
+    #bg4 { background-size:100% 100%;}  /* 배경 이미지 너비와 높이는 요소 너비의 100%, 요소 높이의 100% */ 
+    #bg5 { background-size:contain;}  /* 요소 안에 배경 이미지가 다 보이도록 표시 */
+    #bg6 { background-size:cover;}  /* 요소를 완전히 덮도록 배경 이미지 표시 */
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box" id="bg1"></div>
+    <div class="box" id="bg2"></div>
+    <div class="box" id="bg3"></div>
+    <div class="box" id="bg4"></div>
+    <div class="box" id="bg5"></div>
+    <div class="box" id="bg6"></div>
+  </div>
+ </body>
+</html>

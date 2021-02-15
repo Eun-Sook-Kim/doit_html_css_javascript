@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>플렉스 박스 레이아웃</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .container {
+      width:450px;
+      height:150px;
+      background-color:#eee;
+      border:1px solid #222;
+      margin-bottom:20px;
+      display:flex;         /* 플렉스 컨테이너 지정 */
+      align-items: center;  /* 교차축의 중앙에 배치 */
+    }                                        
+    .box {
+      padding:5px 45px;
+      margin:5px;   
+      background-color:#222;   
+    }
+    #box1 {
+      align-self: flex-start;  /* 교차축의 시작점에 배치 */
+    }
+    #box3 {
+      align-self:stretch;       /* 교차축에 가득 차게 늘림 */
+    }
+    p {
+      color:#fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box" id="box1"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box" id="box3"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+  </div>
+</body>
+</html>

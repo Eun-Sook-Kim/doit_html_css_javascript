@@ -1,0 +1,47 @@
+  <!DOCTYPE html>
+  <html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Grid Layout</title>
+    <style>
+     #wrapper{
+      width:700px;
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-template-rows:repeat(3, 100px);
+    }
+    .box{
+      padding:15px;
+      color:#fff;
+      font-weight:bold;
+      text-align:center;
+    }   
+    .box1 {
+      background-color:#3689ff;
+      grid-column:1/4;
+    }
+    .box2 {
+      background-color:#00cf12;
+      grid-row:2/4;
+    }
+    .box3 {
+      background-color:#ff9019;
+      grid-column:2/4;
+      }
+    .box4 {
+      background-color:#ffd000;
+      grid-column-start:3;   /* 시작과 끝을 같이 지정 grid-column:3/4 */
+      grid-row-start:3;      /* 시작과 끝을 같이 지정 grid-row:3/4 */
+    }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+      <div class="box box4">box4</div>
+    </div>
+  </body>
+  </html>

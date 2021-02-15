@@ -1,0 +1,26 @@
+*{
+  box-sizing:border-box;
+}
+#container {  
+  width:500px;
+  margin:20px auto;
+  padding:20px;
+}
+input[type="text"] {
+  width:370px;
+  float:left;
+  height:30px;
+  padding-left:30px;
+}
+button {
+  width:90px;
+  height:30px;
+  float:right;
+  background:#222;
+  color:#fff;
+  border:none;
+}
+hr { clear:both; display:none; }
+ul { list-style:none; padding-top:50px;}
+li { line-height: 2.5; }
+li:hover { cursor:pointer;}

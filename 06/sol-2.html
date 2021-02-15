@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>탐라국 입춘굿</title>
+  <style>
+    #container {  /* 내용 전체를 감싸는 영역 */
+      width:600px;  /* 너비 600 픽셀 */
+      margin:20px auto;  /* 내용이 화면 중앙에 오도록 지정 */
+    }
+    h1 {
+      display: inline-block;   /* 글자 부분에만 배경 색이 채워지도록 지정 */   
+      background-color:#0404aa;  /* 배경 색 - 짙은 파란색 */
+      color:#fff;  /* 글자 색 - 흰색 */
+    }
+    .accent {
+      font-weight: bold;  /* 글자 굵게 */
+      color:red;  /* 글자 색 - 빨간색 */
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>탐라국 입춘굿</h1>    
+    <p>제주도의 문화축제 중에서 유일하게 <span class="accent">탐라 시대부터 내려온 축제</span>이다.</p>
+    <p>제주에서 입춘은 새철<sup>(제주어, 샛절)</sup> 드는 날이라 한다. <br>
+      하늘의 1만8000신이 지상으로 내려와 새해 일들을 시작하는 때다.
+    </p>
+  </div>
+</body>
+</html>

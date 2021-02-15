@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Programming</title>
+	<link rel="stylesheet" href="css/nodelist.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Web Programming</h1>
+    <p>공부할 주제를 기록해 보세요</p>
+    <form action="">
+      <input type="text" id="subject" autofocus>
+      <button onclick="newRegister(); return false;">추가</button>
+    </form>
+    <hr>  
+    <ul id="itemList"></ul>  
+  </div>
+
+  <script>
+    function newRegister() {
+      var newItem = document.createElement("li");  // 요소 노드 추가
+      var subject = document.querySelector("#subject");  // 폼의 텍스트 필드
+      var newText = document.createTextNode(subject.value);  // 텍스트 필드의 값을 텍스트 노드로 만들기
+      newItem.appendChild(newText);   // 텍스트 노드를 요소 노드의 자식 노드로 추가
+
+      var itemList = document.querySelector("#itemList");  // 웹 문서에서 부모 노드 가져오기 
+      itemList.appendChild(newItem);  // 새로 만든 요소 노드를 부모 노드에 추가
+
+      subject.value="";
+    }
+  </script>
+</body>
+</html>

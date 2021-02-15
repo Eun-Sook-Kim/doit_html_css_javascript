@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>플렉스 박스 레이아웃</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .container {
+      width:100%;
+      height:150px;
+      display:flex;
+      background-color:#eee;
+      border:1px solid #222;
+      margin-bottom:20px;
+    }
+    #opt1{
+      align-items: flex-start;   /* 교차축 시작점 기준으로 배치 */
+    }
+    #opt2{
+      align-items: flex-end;     /* 교차축 끝점 기준으로 배치 */     
+    }
+    #opt3{
+      align-items: center;       /* 교차축 중앙 기준으로 배치 */
+    }
+    #opt4{
+      align-items: baseline;      /* 문자 기준선에 맞춰 배치 */
+    } 
+    #opt5{
+      align-items: stretch;       /* 항목을 늘려 교차축에 가득차게 배치 */
+    }                                         
+    .box {
+      padding:5px 45px;
+      margin:5px;   
+      background-color:#222;   
+    }
+    p {
+      color:#fff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="opt1">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+  </div>
+  <div class="container" id="opt2">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+  </div>
+  <div class="container" id="opt3">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+  </div>
+  <div class="container" id="opt4">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p style="font-size:14px;">2</p></div>
+    <div class="box"><p style="font-size:25px;">3</p></div>
+    <div class="box"><p style="font-size:10px">4</p></div>
+  </div>       
+  <div class="container" id="opt5">
+    <div class="box"><p>1</p></div>
+    <div class="box"><p>2</p></div>
+    <div class="box"><p>3</p></div>
+    <div class="box"><p>4</p></div>
+  </div>            
+</body>
+</html>

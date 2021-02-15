@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color:#eee;
+  font-size:16px;
+}
+.wrapper{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap:1rem;
+}
+.card {
+  background-color:#fff;
+  box-shadow:0px 1px 5px #222;
+}
+.card > header {
+  font-size:1.5rem;
+  padding:0.5rem;
+}
+.card > p {
+  padding:0.5rem;
+  line-height:1.6em;
+}
+.card > img {
+  max-width:100%;
+}

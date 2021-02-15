@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>현재 시간 보기</title>
+  <style>
+    #container{
+      width:200px;
+      margin:50px auto;
+    }
+    button {
+      border:1px solid #ccc;
+      background:#fff;
+      padding:20px 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <button id="bttn">현재 시간 보기</button>
+  </div>
+
+  <script>
+    document.getElementById('bttn').onclick = displayTime;
+
+    function displayTime(){        
+      var left = (screen.availWidth - 400) / 2;  // 팝업 창의 왼쪽 좌표
+      var top = (screen.availHeight - 200) / 2;   // 팝업 창의 위쪽 좌표 
+      var opt = "left=" + left + ",top=" + top + ",width=" + 400 + ",height=" + 200;
+      window.open("current.html", "", opt);
+    }
+  </script>
+</body>
+</html>

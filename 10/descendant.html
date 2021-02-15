@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>고급 선택자</title>
+  <style>
+    body {
+      background-color:#eee;
+    }
+    section {
+      width:600px;
+      margin:20px auto;
+    }
+    p {
+      width:500px;
+      padding:10px;
+      background-color:#fff;
+      border:1px solid #ccc;
+      line-height:2;
+    }
+   section p {  /* section 요소의 모든 하위 p 요소에 적용 */
+      color:blue;   /* 글자색을 파란색으로 */
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>예약 방법 & 사용 요금</h1>
+    <p>아직 온라인 예약 신청이 준비되어 있지 않습니다. <br>전화(xxx-xxxx-xxxx)로 문의 바랍니다.</p>
+    <div>
+      <p>가족실(2~4인) : 60,000원/일</p>
+      <p>도미토리(4인 공용) : 25,000원/일</p>
+  </section>   
+</body>
+</html>
