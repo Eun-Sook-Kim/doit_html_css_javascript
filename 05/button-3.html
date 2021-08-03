@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레드향 주문하기</title>
+  <link rel="stylesheet" href="css/order2.css">
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <div id="container">
+    <form>
+      <fieldset>
+        <legend>상품 선택</legend>
+        <p><b>주문할 상품을 선택해 주세요.</b></p>
+        <ul id="product">
+          <li>
+            <label><input type="checkbox" value="s_3">선물용 3kg</label>
+            <input type="number" min="0" max="5">개 <small>(최대 5개)</small>
+          </li>
+          <li>
+            <label><input type="checkbox" value="s_5">선물용 5kg</label>
+            <input type="number" min="0" max="3" value="1">개 <small>(최대 3개)</small>
+          </li>
+          <li>
+            <label><input type="checkbox" value="f_3">가정용 3kg</label>
+            <input type="number" min="0" max="5">개 <small>(최대 5개)</small>
+          </li>
+          <li>
+            <label><input type="checkbox" value="f_5">가정용 5kg</label>
+            <input type="number" min="0" max="3">개 <small>(최대 3개)</small>
+          </li>
+        </ul>      
+        <p><b>포장 선택</b></p>
+        <ul>
+          <li><label><input type="radio" value="yes">선물 포장</label></li>
+          <li><label><input type="radio" value="no">선물 포장 안 함</label></li>
+        </ul>    
+      </fieldset>
+      <fieldset>
+        <legend>배송 정보</legend>
+        <ul id="shipping">
+          <li>
+            <label for="user-name">이름 </label>
+            <input type="text" id="user-name">
+          </li>
+          <li>
+            <label for="addr">배송 주소</label>
+            <input type="text" id="addr">
+          </li>
+          <li>
+            <label for="mail">이메일</label>
+            <input type="email" id="mail">
+          </li>        
+          <li>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone">
+          </li>
+          <li>
+            <label for="d-day">배송 지정</label>
+            <input type="date" id="d-day"> <small>(주문일로부터 최소 3일 이후)</small>
+          </li>     
+          <li>
+            <label for="memo">메모</label>
+            <textarea id="memo" cols="40" rows="4"></textarea>
+          </li>   
+        </ul>  
+      </fieldset>
+      <div>
+        <button type="submit">주문하기</button>
+        <button type="reset">취소하기</button>
+      </div>        
+    </form>
+  </div>
+</body>
+</html>
